@@ -103,7 +103,7 @@ Después de compilar, ejecuta el programa con:
 cajero.exe # 
   **fin de la guia de instalacion y compilacion**
   
-##**Explicación/Descripcion de las cuentas**
+## **Explicación/Descripcion de las cuentas**
 
 **Características**
 
