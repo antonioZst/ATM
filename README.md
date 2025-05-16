@@ -102,5 +102,37 @@ Después de compilar, ejecuta el programa con:
 
 cajero.exe # 
   **fin de la guia de instalacion y compilacion**
+  
+#Explicación/Descripcion de las cuentas
+
+**Características**
+
+Las características principales de la estructura cliente que es donde se encuentra almacenada toda la información de las cuentas, es que están definidos tres datos de tipo int los cuales son nCliente, nip y movimientos.
+
+El tipo de dato entero definido como nCliente contendrá el número de la cuenta de cada cliente, el cual será fundamental para el funcionamiento de la función login la cual se describe más adelante.
+
+El tipo de dato entero definido como nip contendrá la contraseña del usuario la cual será de 4 dígitos.
+
+El último dato de tipo entero está definido como movimientos el comienza en cero termina en 10 (ya que guardará los últimos 10 movimientos que haga el usuario) y almacenará la cantidad de movimientos que hace el usuario y también informará con números negativos (si se trata de un retiro) o con números positivos (si se trata de un depósito) los movimientos del usuario.
+
+También se encuentran definidos dos datos de tipo char (cadenas) los cuales son Nombre y Apellido los cuales son arreglos de 50 elementos cada uno. 
+
+Ambos arreglos de carácter almacenarán el nombre del usuario y sus apellidos (respectivamente), los cuales serán fundamentales para el correcto funcionamiento de la función crear cuenta y búsqueda.
+
+Por último tiene un tipo de dato de tipo float el cual almacena el saldo que contiene cada cuenta.
+
+**Acciones**
+
+Las acciones que se pueden realizar con las cuentas son consultar saldo, depositar, retirar, buscar, crear cuentas.
+
+En la función de consultar el saldo de la cuenta, lo que regresa es el saldo que contiene esa cuenta después de retirar o depositar el saldo. Lo que requiere esta función para que funcione es que la cuenta en cuestión se encuentre registrada en el sistema con sus respectivos datos (esto se hace mediante la función crear cuenta), además de eso recibe un tipo de dato flotante denominada como saldo para que pueda funcionar, también recibe una función constante denominada como consultar saldo.
+
+En la función de depositar saldo, lo que regresa es es un printf o imprimir en pantalla dependiendo de los datos ingresados por el usuario al momento de ingresar una cantidad para depositar, si la cantidad es menor o igual a cero el programa regresa el mensaje “CANTIDAD NO VÁLIDA” esto mediante un int llamado valida, el cual contiene una estructura llamada cliente con un paso de parámetros * cliente, un tipo de dato flotante definido como cantidad y un tipo de dato carácter definido como tipo, Si tipo es igual a d o D (refiriendose al deposito) el programa escribe “DEPÓSITO REALIZADO CON ÉXITO. TU NUEVO SALDO ES:” Mostrando al usuario el nuevo saldo registrado en el sistema.
+
+En la función de retirar, lo que regresa es un printf también dependiendo de los datos ingresados por el usuario al momento de ingresar una cantidad para retirar, mediante un condicional if se verifica si la cantidad ingresada es mayor al saldo que tiene el cliente, si esto ocurre el programa devolverá el mensaje “SALDO INSUFICIENTE”, en caso contrario mediante un paso de parámetros se verifica si el saldo del cliente es mayor a la cantidad a retirar si esto ocurre el programa generará el mensaje RETIRO REALIZADO CON ÉXITO. TU NUEVO SALDO ES:”. Mostrando el nuevo saldo del usuario después del retiro
+
+En la función de buscar, lo que regresa es el número de la cuenta es el número de la cuenta del usuario, esto debido a un tipo de dato int, el cual tiene como parámetros un arreglo de carácteres denominado name, un arreglo denominado clientes y otro int denominado sizeClientes, también debido a un bucle for con un entero definido como i que está igualado a 0, hasta que i sea menor que sizeClientes, i ++.
+
+En la función de crear cuenta, lo que regresa es una cuenta nueva, esto debido a una función void denominada como crear, la cual tiene como parámetros una estructura  denominada cliente y paso de parámetros llamado cliente, y un tipo de dato entero definido como numClientes el cual también es un paso de parámetros, luego otra estructura cliente con varios pasos de parametros, se le pide al usuario que ingrese varios datos como su nombre, sus apellidos, un nip o contraseña la cual será de 4 dígitos y un saldo inicial, todo esto a base varios pasos de parametros, despues de esto mediante un bucle for se incrementa en uno el número de usuarios que contiene el programa. 
 
 
