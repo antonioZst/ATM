@@ -49,7 +49,58 @@ Si los datos ingresados son correctos, la cuenta es creada con exito y se le reg
 -- Guardar o exportar --
 **Esta opcion solo esta disponible para administradores** 
 La cual al ser seleccionada se pide un usuario y contraseña, si los datos son correctos, es decir, se trata de un administrador, se le muestra un menu simple donde puede guardar la informacion actual de todos los clientes o exportarla en formato json, al finalizar la accion se le regresa al menu principal.
-
+#instalacion y ejecucion del programa cajero_automatico.c 
 -- Salir --
 Termina la ejecucion del programa completamente.
 *** FIN DE GUIA DE USUARIO ***
+
+## A continuacion se describiran los pasos necesarios para instalar, compilar y ejecutar el programa de cajero automatico desarrollado en lenguaje c:
+
+## archivos necesarios: 
+
+**main.c** 
+Contiene la funcion principal del programa.
+**cajero.h** 
+Contiene las funciones necesarias para el funcionamiento del programa.
+**archivo.txt** 
+Archivo de texto donde se guardara la informacion de los clientes, si este no existe sera creado automaticamente por el programa. 
+
+## requisitos del sistema:
+
+Antes de descargar los archivos del programa asegurese de contar con: 
+*un sistema operativo que funcione con c. 
+*un entorno de desarrollo integrado (IDE) o herramientas de compilación.
+*un compilador de C como **gcc**
+*un editor de texto. 
+*acceso a la linea de comandos o terminal.
+(este programa fue creado originalmente en windows utilizando como IDE codeblocks).
+
+## Estructura del Proyecto
+
+Coloca los siguientes archivos en un mismo directorio:
+cajero/
+main.c
+cajero.h
+saldo.txt
+
+# instrucciones para la instalacion y compilacion del programa:
+
+### Paso 1: Crear los archivos fuente
+
+Descarga los dos archivos ejecutables desde github: `main.c` y `cajero.h`.
+y colocalos en el directorio cajero/
+
+### Paso 2: Compilar el programa
+
+Abre una terminal y navega al directorio donde están los archivos (cajero/). 
+para compilar el programa es necesaerio convertir el archivo.c en un ejecutable .exe
+El proceso de compilación en C consta de cuatro pasos: preprocesamiento, compilación, ensamblaje y enlace.
+
+### Paso 3: Ejecutar el programa
+
+Después de compilar, ejecuta el programa con:
+
+cajero.exe # 
+  **fin de la guia de instalacion y compilacion**
+
+
