@@ -88,6 +88,8 @@ saldo.txt
 ### Paso 1: Crear los archivos fuente
 
 Descarga los dos archivos ejecutables desde github: `main.c` y `cajero.h`.
+![image](https://github.com/user-attachments/assets/7d7b6c00-a4a6-4fdb-bfd2-2026b3572341)
+
 y colocalos en algun directorio conocido por usted. 
 
 ### Paso 2: Compilar y ejecutar el programa
