@@ -88,13 +88,17 @@ saldo.txt
 ### Paso 1: Crear los archivos fuente
 
 Descarga los dos archivos ejecutables desde github: `main.c` y `cajero.h`.
-y colocalos en el directorio cajero/
+y colocalos en algun directorio conocido por usted. 
 
 ### Paso 2: Compilar y ejecutar el programa
 
  1. navegue al directorio donde están los archivos y abre la terminal cmd.
+    ![Screenshot 2025-05-16 221411](https://github.com/user-attachments/assets/60dd8353-5d93-4e18-9a5d-64a4d9f301bd)
+
  2.  una vez ubicados dentro de la terminal, escriba el siguiente comando: gcc main.c -o cajero (este le permitira crear un programa ejecutable).
  3. para compilar el programa es necesaerio convertir el archivo.c en un ejecutable .exe para hacer esto utilice el comando gcc main.c -o main.exe
+    ![Screenshot 2025-05-16 222450](https://github.com/user-attachments/assets/b791f20f-c7fa-4591-a05a-a6c3675bd187)
+
  4. Con eso el programa del cajero debería ejecutarse en consola mostrando el menú interactivo para continuar utilizando el programa con exito.
  5. a continuacion se muestra una imagen ilustrativa del proceso de compilacion y ejecución
  ![Screenshot 2025-05-16 222450](https://github.com/user-attachments/assets/2bca221c-ed95-4c98-a966-8ceaed596c48)
