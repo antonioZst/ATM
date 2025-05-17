@@ -5,6 +5,7 @@ typedef struct{
     int nCliente;
     int nip;
     char nombre[50];
+    char apellido[50];
     float saldo;
 } cliente;
 
