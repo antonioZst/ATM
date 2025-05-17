@@ -69,11 +69,11 @@ Archivo de texto donde se guardara la informacion de los clientes, si este no ex
 
 Antes de descargar los archivos del programa asegurese de contar con: 
 *un sistema operativo que funcione con c. 
-*un entorno de desarrollo integrado (IDE) o herramientas de compilación.
+*un entorno de desarrollo integrado (IDE) o herramientas de compilación como MINGW.
 *un compilador de C como **gcc**
 *un editor de texto. 
 *acceso a la linea de comandos o terminal.
-(este programa fue creado originalmente en windows utilizando como IDE codeblocks).
+
 
 ## Estructura del Proyecto
 
@@ -90,17 +90,15 @@ saldo.txt
 Descarga los dos archivos ejecutables desde github: `main.c` y `cajero.h`.
 y colocalos en el directorio cajero/
 
-### Paso 2: Compilar el programa
+### Paso 2: Compilar y ejecutar el programa
 
-Abre una terminal y navega al directorio donde están los archivos (cajero/). 
-para compilar el programa es necesaerio convertir el archivo.c en un ejecutable .exe
-El proceso de compilación en C consta de cuatro pasos: preprocesamiento, compilación, ensamblaje y enlace.
+ 1. navegue al directorio donde están los archivos y abre la terminal cmd.
+ 2.  una vez ubicados dentro de la terminal, escriba el siguiente comando: gcc main.c -o cajero (este le permitira crear un programa ejecutable).
+ 3. para compilar el programa es necesaerio convertir el archivo.c en un ejecutable .exe para hacer esto utilice el comando gcc main.c -o main.exe
+ 4. Con eso el programa del cajero debería ejecutarse en consola mostrando el menú interactivo para continuar utilizando el programa con exito.
+ 5. a continuacion se muestra una imagen ilustrativa del proceso de compilacion y ejecución
+ ![Screenshot 2025-05-16 222450](https://github.com/user-attachments/assets/2bca221c-ed95-4c98-a966-8ceaed596c48)
 
-### Paso 3: Ejecutar el programa
-
-Después de compilar, ejecuta el programa con:
-
-cajero.exe # 
   **fin de la guia de instalacion y compilacion**
   
 ## **Explicación/Descripcion de las cuentas**
