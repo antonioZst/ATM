@@ -6,6 +6,7 @@
 #include "deposito.h"
 #include "findClientByName.h"
 #include "GuardarCliente.h"
+#include<ctype.h>
 
 int accountsMenu(){
     int position;
@@ -31,7 +32,7 @@ int main()
         {2, 1234, "Jose", "Rodriguez", 2000},
         {3, 1234, "Manuel", "Campos", 3000},
     };
-    int ans;
+    int ans,contasena=1234,resp;
     int numeroClientes = 100;
     do{
     printf("\n---------------Menu principal---------------\n");
@@ -41,6 +42,8 @@ int main()
     printf("4) Crear cuenta\n");
     printf("5) Salir\n");
     printf("6) Guardar o exportar\n");
+    printf("7) Encriptar\n");
+    printf("8) Desencriptar\n");
     scanf("%d", &ans);
     switch(ans){
     case 1:
@@ -51,6 +54,7 @@ int main()
         break;
     case 3:
         deposito(clientes, 3);
+        guardarClientes(clientes, 3);
         break;
     case 4:
         crear(clientes, &numeroClientes);
@@ -59,8 +63,32 @@ int main()
         return 0;
     case 6:
         guardarClientes(clientes, 3);
+        printf("Datos guardados exitosamente!!\n");
+        break;
+    case 7:
+        printf("\nIngrese la contasena: ");
+        scanf("%d",&resp);
+        if(resp == contasena){
+            EncriptacionArchivo();
+            printf("Encriptacion exitosa!!\n");
+        }
+        else{
+            printf("\nContrasena incorrecta, intentalo de nuevo\n");
+        }
+
+        break;
+    case 8:
+
+        printf("\nIngrese la contasena: ");
+        scanf("%d",&resp);
+        if(resp == contasena){
+            DescifradoArchivo();
+            printf("Descencriptacion exitosa!!\n");
+        }
+        else{
+            printf("\nContrasena incorrecta, intentalo de nuevo\n");
+        }
         break;
     }
     }while(ans != 5);
 }
-
