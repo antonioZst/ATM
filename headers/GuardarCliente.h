@@ -1,5 +1,6 @@
 #ifndef GUARDARCLIENTE_H_INCLUDED
 #define GUARDARCLIENTE_H_INCLUDED
+#include<ctype.h>
 
 void guardarClientes(cliente Persona[], int cantidad);
 void EncriptacionArchivo();

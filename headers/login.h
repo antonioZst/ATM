@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include"GuardarCliente.h"
 
 int login(cliente *clientes, int sizeClientes) {
     int option, numeroCliente, contrasena;
@@ -77,6 +78,7 @@ int login(cliente *clientes, int sizeClientes) {
                     printf("Accion realizada con exito\n");
                 }
             }
+            guardarClientes(clientes, 3);
             break;
 
         case 4:
